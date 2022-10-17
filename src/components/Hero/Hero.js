@@ -4,17 +4,17 @@ import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponent
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 
-const Hero = (props) => (
+const Hero = () => (
   <Section row nopadding>
     <LeftSection>
       <SectionTitle main center>
-        Hello there <br/>
-        I am a FullStack Web Developer
+        Welcome to <br/>
+        My Personal Portfolio
       </SectionTitle>
       <SectionText>
         The reason I am into web-development is to offer solutions to everyday problem as required.
       </SectionText>
-      <Button>Learn More</Button>
+      <Button onClick={()=> windows.location = "https://google.com"}>Learn More</Button>
     </LeftSection>
 
   </Section>
